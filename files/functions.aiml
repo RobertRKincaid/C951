@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+
+  <category>
+      <pattern>GET SCORE</pattern>
+      <template>
+          <think>
+              <set name="total_score"><get name="score1"/><get name="score2"/><get name="score3"/><get name="score4"/></set>
+          </think>
+          <srai>CAREER ADVICE</srai> 
+          <srai>GET JOB</srai>
+          <srai>TRY AGAIN</srai>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>CAREER ADVICE</pattern>
+      <template>
+          <random>
+              <li>Based on your responses it appears that you would be best suited being a </li>
+              <li>Looks like you would do well as a </li>
+              <li>Might as well try being a </li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>GET JOB</pattern>
+      <template>
+          <condition name="total_score">
+            <li value="1111">Software Developer. <srai>MORE 1</srai> </li>
+            <li value="1112">Data Analyst/Scientist. <srai>MORE 2</srai></li>
+            <li value="1121">Data Analyst/Scientist. <srai>MORE 2</srai></li>
+            <li value="1211">Data Analyst/Scientist. <srai>MORE 2</srai></li>
+            <li value="2111">Data Analyst/Scientist. <srai>MORE 2</srai></li>
+            <li value="1122">Web Developer. <srai>MORE 3</srai></li>
+            <li value="1212">Web Developer. <srai>MORE 3</srai></li>
+            <li value="2112">Web Developer. <srai>MORE 3</srai></li>
+            <li value="2121">Web Developer. <srai>MORE 3</srai></li>
+            <li value="2211">Web Developer. <srai>MORE 3</srai></li>
+            <li value="1221">Web Developer. <srai>MORE 3</srai></li>
+            <li value="2221">Cybersecurity Analyst. <srai>MORE 4</srai></li>
+            <li value="2212">Cybersecurity Analyst. <srai>MORE 4</srai></li>
+            <li value="2122">Cybersecurity Analyst. <srai>MORE 4</srai></li>
+            <li value="1222">Cybersecurity Analyst. <srai>MORE 4</srai></li>
+            <li value="2222">IT Support Specialist. <srai>MORE 5</srai></li>
+            <li>It seems I have no idea what I am doing. Why don't you try for your Master's Degree?</li>
+          </condition>
+      </template>
+  </category>
+  
+</aiml>

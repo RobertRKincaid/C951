@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+
+  <category>
+      <pattern>START</pattern>
+      <template>
+        <button>
+	      <text>START</text>
+	      <postback>TOO FAST</postback>
+	    </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>TOO FAST</pattern>
+      <template>
+          Woah woah woah. Hold on a minute. I forgot to ask, what is your major?
+          <button>
+              <text>Computer Science</text>
+              <postback>Question 1</postback>
+          </button>
+          <button>
+              <text>Something else lame</text>
+              <postback>NOT MY PROBLEM</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NOT MY PROBLEM</pattern>
+      <template>
+          I'm sorry. I am here to help out these Computer Science folks. 
+          You could always check out a degree in CS!
+          <link>
+              <text>Look into Computer Science</text>
+              <url>https://www.wgu.edu/online-it-degrees/computer-science.html</url>
+          </link>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>RESTART</pattern>
+      <template>From the top, then. <srai>QUESTION 1</srai></template>
+  </category>
+  
+  <category>
+      <pattern>TRY AGAIN</pattern>
+      <template>
+          Would you like to go through this again?
+          <button>
+              <text>Yes</text>
+              <postback>YES</postback>
+          </button>
+          <button>
+              <text>No</text>
+              <postback>No</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES</pattern>
+      <template>Alrighty then. <srai>QUESTION 1</srai></template>
+  </category>
+  
+  <category>
+      <pattern>EXIT</pattern>
+      <template>
+          Thank you for chatting. Goodbye!
+          <think>
+              <set name="end_chat">true</set>
+          </think>
+      </template>
+  </category>
+
+  <category>
+      <pattern>NO</pattern>
+      <template>It is probably for the best. <srai>EXIT</srai></template>
+  </category>	
+  
+</aiml>

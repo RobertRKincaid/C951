@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>HI</pattern>
+	    <template>
+	        <think>
+	            <set name="start_chat">false</set>
+	        </think>
+	        Hello there! My name is Bob, your digital career guidance counselor.
+	        I would like to get you pointed in the right direction for your future career.
+	        If you are ready to get started, slap that start button!
+	        <srai>START</srai>
+	    </template>
+	</category>
+</aiml>

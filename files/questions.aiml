@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+  
+  <category>
+      <pattern>QUESTION 1</pattern>
+      <template>
+          Sorry for jumping the gun there. Ok. First question: Are you more of a problem solver or do you consider yourself creative?
+          <button>
+            <text>
+                Problem Solver
+            </text>
+            <postback>
+                Problem Solver
+            </postback>
+          </button>
+          <button>
+            <text>
+                Creative
+            </text>
+            <postback>
+                Creative
+            </postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>QUESTION 2</pattern>
+      <template>
+          Are you more analytical or detail-oriented?
+          <button>
+            <text>
+                Analytical
+            </text>
+            <postback>
+                Analytical
+            </postback>
+          </button>
+          <button>
+            <text>
+                Detail-oriented
+            </text>
+            <postback>
+                Detail-oriented
+            </postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>QUESTION 3</pattern>
+      <template>
+          Do you see yourself as more of a team player or a critical thinker?
+          <button>
+            <text>
+                Team player
+            </text>
+            <postback>
+                Team player
+            </postback>
+          </button>
+          <button>
+            <text>
+                Critical thinker
+            </text>
+            <postback>
+                Critical thinker
+            </postback>
+          </button>
+      </template>
+  </category>
+ 
+  <category>
+      <pattern>QUESTION 4</pattern>
+      <template>
+          Last question: Are you more of an innovative thinker or customer-focused?
+          <button>
+            <text>
+                Innovative thinker
+            </text>
+            <postback>
+                Innovative thinker
+            </postback>
+          </button>
+          <button>
+            <text>
+                Customer-focused
+            </text>
+            <postback>
+                Customer-focused
+            </postback>
+          </button>
+      </template>
+  </category>	
+	
+</aiml>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+  
+  <category>
+      <pattern>^ SOLVER ^</pattern>
+      <template>
+          <think>
+            <set name ="score1">1</set>
+          </think>
+          Sounds about right. <srai>QUESTION 2</srai>
+      </template>
+  </category> 
+  
+  <category>
+      <pattern>^ CREATIVE ^</pattern>
+      <template>
+          <think>
+            <set name ="score1">2</set>
+          </think>
+          That makes sense to me. Alright. <srai>QUESTION 2</srai>
+      </template>
+  </category>   
+
+  <category>
+      <pattern>^ ANALYTICAL ^</pattern>
+      <template>
+          <think>
+            <set name ="score2">1</set>
+          </think>  
+        That makes sense to me. Alright. <srai>QUESTION 3</srai>
+      </template>
+  </category>
+
+  <category>
+      <pattern>^ DETAIL ^</pattern>
+      <template>
+          <think>
+            <set name ="score2">2</set>
+          </think>
+          Uhhhh......ok then. <srai>QUESTION 3</srai>
+      </template>
+  </category> 
+  
+  <category>
+      <pattern>^ PLAYER ^</pattern>
+      <template>
+          <think>
+            <set name ="score3">1</set>
+          </think>
+          I can see it. <srai>QUESTION 4</srai>
+      </template>
+  </category>   
+  
+  <category>
+      <pattern>^ CRITICAL ^</pattern>
+      <template>
+          <think>
+            <set name ="score3">2</set>
+          </think>
+          If you say so. <srai>QUESTION 4</srai>
+      </template>
+  </category>  
+
+  <category>
+      <pattern>^ INNOVATIVE ^</pattern>
+      <template>
+          <think>
+            <set name ="score4">1</set>
+          </think>
+          Not what I would have said, but that's fine. <srai>GET SCORE</srai> <set name="total_score"></set>
+      </template>
+  </category> 
+  
+  <category>
+      <pattern>^ CUSTOMER ^</pattern>
+      <template>
+          <think>
+            <set name ="score4">2</set>
+          </think>
+          Simple enough. <srai>GET SCORE</srai> <set name="total_score"></set>
+          </template>
+  </category> 	
+	
+</aiml>

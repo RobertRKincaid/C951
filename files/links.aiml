@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+  <category>
+      <pattern>MORE 1</pattern>
+      <template>
+          <link>
+              <text>Find out more!</text>
+              <url>https://www.coursera.org/articles/software-developer</url>
+          </link>
+      </template>
+  </category>
+	
+  <category>
+      <pattern>MORE 2</pattern>
+      <template>
+          <link>
+              <text>Find out more!</text>
+              <url>https://www.coursera.org/articles/what-is-a-data-scientist</url>
+          </link>
+      </template>
+  </category>
+	
+  <category>
+      <pattern>MORE 3</pattern>
+      <template>
+          <link>
+              <text>Find out more!</text>
+              <url>https://www.coursera.org/articles/web-developer</url>
+          </link>
+      </template>
+  </category>
+	
+  <category>
+      <pattern>MORE 4</pattern>
+      <template>
+          <link>
+              <text>Find out more!</text>
+              <url>https://www.coursera.org/articles/cybersecurity-analyst-job-guide</url>
+          </link>
+      </template>
+  </category>
+	
+  <category>
+      <pattern>MORE 5</pattern>
+      <template>
+          <link>
+              <text>Find out more!</text>
+              <url>https://www.indeed.com/career-advice/finding-a-job/it-support-specialists</url>
+          </link>
+      </template>
+  </category>
+</aiml>

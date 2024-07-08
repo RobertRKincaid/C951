@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <condition name="end_chat" value="true">
+        <li>I have more students to attend to. Please start a new session if you have more questions</li>
+    </condition>
+    <condition name="start_chat" value="true">
+        <li><srai>HI</srai></li>
+    </condition>
+    <template>Get started by saying "Hi"</template>
+  </category>
+</aiml>
+
